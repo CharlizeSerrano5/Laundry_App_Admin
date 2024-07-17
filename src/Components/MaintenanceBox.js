@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-
+import { Link } from 'react-router-dom';
 const activeStyle = {
     backgroundColor: '#A52A2A',
     color:'white',
@@ -16,9 +16,11 @@ const inactiveStyle = {
 
 function MaintenanceBar() {
     return (
-        <Box style={activeStyle}>
-            Maintenance
-        </Box>
+        <Link to='/maintenance'>
+            <Box style={activeStyle}>
+                Maintenance
+            </Box>
+        </Link>
     )
 }
 

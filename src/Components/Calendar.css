@@ -1,0 +1,80 @@
+.CalendarTable{
+    width: 100%;
+
+    border-collapse: collapse;
+    border-top-left-radius: 5px;
+    table-layout: fixed;
+}
+
+.CalendarTable th{
+    background-color: #D6D5DA;
+    /* border: 1px solid #D6D5DA;  */
+    padding: auto;
+}
+
+.CalendarTable th:nth-child(2) {
+  border-top-left-radius: 10px;
+}
+.CalendarTable th:nth-child(8) {
+  border-top-right-radius: 10px;
+}
+
+
+.CalendarTable td {
+  border: 1px solid #D6D5DA; 
+  text-align: center;
+  background-color: transparent; 
+
+}
+/* .CalendarTable tr:first-child {
+  border-top-left-radius: 5px;
+  background-color: pink;
+  text-align: center;
+  background-color: transparent; 
+
+} */
+
+.CalendarHeader {
+    width: 100%;
+}
+
+
+.CalendarTable th:first-child {
+    background-color: transparent;
+}
+
+
+.CalendarWeekday {
+    font-size: 15px;
+}
+
+.CalendarNumber {
+    font-size: 30px;
+}
+
+
+.CalendarTable tr:first-child th {
+border: none;
+}
+  
+.CalendarTable th:first-child,
+.CalendarTable td:first-child {
+    border: none;
+    padding: 0;
+    display: inline;
+    text-align: center;
+}
+  
+
+  /* Remove borders around the first column */
+  .CalendarTable th:first-child,
+  .CalendarTable td:first-child {
+    border: none;
+  }
+
+  .CalendarTable th:first-child,
+.CalendarTable td:first-child {
+  border-top: none;
+  border-bottom: none;
+  border:none;
+}

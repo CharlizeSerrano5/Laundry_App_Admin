@@ -3,23 +3,21 @@ import './App.css';
 import ServiceAppView from './Components/ServiceAppView';
 import ServiceDetails from './Components/ServiceDetails';
 import TopBar from './Components/TopBar';
+import ServiceContext from './Components/ServiceContext';
+import React from 'react';
+import Main from './Main';
 
 function App() {
+
+  const [serviceTitle, setServiceTitle] = React.useState('Service Details');
+  const defineServiceTitle = (title) => {
+      setServiceTitle(title);
+      // set a new title
+  }
+
   return (
     <div className="App">
-        <TopBar></TopBar>
-        <Container>
-          <Grid container spacing={1}>
-            <Grid item xs={4}>
-              <ServiceAppView></ServiceAppView>
-
-            </Grid>
-            <Grid item xs={8}>
-              <ServiceDetails></ServiceDetails>
-
-            </Grid>
-          </Grid>
-        </Container>
+        <Main></Main>
         
     </div>
   );
