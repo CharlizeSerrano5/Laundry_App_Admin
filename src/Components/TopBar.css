@@ -1,0 +1,28 @@
+.TopBar{
+    background-color: #160449;
+    color: #F6EEE3;
+    /* position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%; */
+    padding: 10px;
+    margin: 0px;
+}
+
+.TopBarTitle{
+    color: 'white';
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    padding: auto;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+
+.TopBarSubtitle{
+    margin-top: 0px;
+    font-size: 10px;
+}

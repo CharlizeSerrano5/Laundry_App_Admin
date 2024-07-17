@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { Container, Grid } from '@mui/material';
 import './App.css';
+import ServiceAppView from './Components/ServiceAppView';
+import ServiceDetails from './Components/ServiceDetails';
+import TopBar from './Components/TopBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <TopBar></TopBar>
+        <Container>
+          <Grid container spacing={1}>
+            <Grid item xs={4}>
+              <ServiceAppView></ServiceAppView>
+
+            </Grid>
+            <Grid item xs={8}>
+              <ServiceDetails></ServiceDetails>
+
+            </Grid>
+          </Grid>
+        </Container>
+        
     </div>
   );
 }
